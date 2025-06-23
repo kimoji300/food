@@ -1,0 +1,434 @@
+:root {
+    --yellow: #f6d365;
+    --black: #333333;
+    --white: #ffffff;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 800px;
+    background: url("../img/food-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    height: 180px;
+    align-items: center;
+    }
+
+
+    li a{
+        color:#D3D3D3;
+        padding: 0 20px;
+        text-decoration: none;
+        margin-left: 50px;
+    }
+    .logo img {
+        padding: 20px;
+        width: 150px;
+    }
+
+
+    
+   header .discount-title{
+    width: 55rem;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    align-items: center;
+    text-align: center;
+}
+
+.text{
+    padding-top: 10px;
+    font-size:20px;
+    color: #D3D3D3;
+}
+
+      .discount-title-box{
+            width: 55rem;
+            margin: 0.623rem;
+}
+
+            h1 {
+                font-size: clamp(2rem, 10vw, 107px);
+                color: var(--white);
+            } 
+
+
+            .discount-btn {
+                display: inline-flex;
+                height: 65px;
+                max-width: 300px;
+                max-width: 320px;
+                width: 100%;
+                font-size: 20px;
+                background-color: var(--yellow);
+                color: var(--black);
+                justify-content: center;
+                font-weight: bold;
+                text-decoration: none;
+                align-items: center;
+                border-radius: 20px;
+                margin-top: 60px;
+            }
+
+     .popular-menu {
+        background: url('../img/popular-bg.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 800px;
+        overflow: hidden;
+
+     }
+     .popular-menu-title {
+        margin: 3rem 0;
+        text-align: center;
+
+        h2 {
+            font-size: clamp(2rem, 10vw, 3.875rem);
+            text-transform: uppercase;
+            color: #663300;
+        }
+
+         p {
+            color: var(--black);
+            text-align: center;
+            padding-top: 30px;
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(1rem, 10vw, 1.5rem);
+            text-transform: uppercase;
+        }
+     }
+
+     .popular-menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 5rem;
+     }
+
+     .popular-menu-item {
+        text-align: center;
+
+        img{
+            width: 100%;
+        }
+
+        p{
+            padding-top: 10px;
+           font-size: clamp(1rem, 10vw, 1rem); 
+           color: var(--black);
+        }
+
+        h3 {
+            font-size: clamp(2rem, 10vw, 2rem);
+            margin: 1rem 0;
+            color: #663300;
+        }
+     }
+
+
+/*/* เมนูแบบมือถือ (ซ่อนก่อน) */
+    @media screen and (max-width: 768px) {
+       
+       .popular-menu{
+        height: auto;
+        padding: 3rem 0;
+       } 
+    }
+
+
+.hamburger {
+    font-size: 28px;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* เมนูปกติ (desktop) */
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+
+
+/*/* เมนูแบบมือถือ (ซ่อนก่อน) */
+    @media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        margin-right: 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        li {
+            padding: 20px;
+            margin-top: 2rem;
+        }
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+
+    .text {
+        display: none;
+    }
+    h1 {
+        display: none;
+    }
+    .discount-btn {
+        display: none;
+    }
+
+}
+
+.chicken {
+  background: url("../img/chicken-wing-bg-black.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 800px;
+  position: relative;
+  z-index: 1;
+}
+
+.chicken-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+}
+
+.chicken-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image-box {
+    margin-right: 600px;
+}
+.chicken-img img {
+    max-width: 500px;
+    width: 500px;
+  height: 600px;
+}
+
+
+.main-info {
+         padding: 1rem;
+        margin-right: 50px;
+        max-width: 650px;
+        .main {
+      font-size: 60px;
+      font-weight: bold;
+      color: var(--white);
+      text-align: center;
+    }
+}
+
+.message {
+        font-size: clamp(1rem, 10vw, 1.5rem);
+        color:  #D3D3D3;
+        margin: 20px;
+        padding: 1rem 2.5rem;
+      }
+
+      .chicken-btn {
+                display: inline-flex;
+                height: 65px;
+                max-width: 320px;
+                margin: 0 5rem;
+                width: 100%;
+                font-size: 20px;
+                background-color: var(--yellow);
+                color: var(--black);
+                justify-content: space-around;
+                text-decoration: none;
+                align-items: center;
+                border-radius: 20px;
+                margin-top: 30px;
+                font-weight: bolder;
+      }
+
+
+.statistics {
+    height: 800px;
+    background-size: cover;
+    background: url("../img/update-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.title {
+    align-items: center;
+    padding: 3rem;
+
+    h1 {
+        font-size: clamp(1rem, 10vw, 3rem);
+        text-align: center;
+        color: #663300;
+    }
+
+    P{
+        margin-top: 30px;
+        font-size: clamp(1rem, 10vw, 1.5rem);
+    }
+}
+
+.states-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 5rem;
+  text-align: center;
+}
+    
+  .states-grid-item {
+            border: 10px solid var(--black);
+         padding: 8rem 0;
+         margin-top: 3rem;
+  }
+            h3 {
+                font-size: 50px;
+                text-decoration: uppercase;
+            }
+
+            p{
+                font-size: clamp(1rem, 10vw, 2rem);
+            }
+
+
+    
+/*/* เมนูแบบมือถือ (ซ่อนก่อน) */
+    @media screen and (max-width: 768px) {
+           .main-info {
+        height: auto;
+        padding: 3rem 0;
+       } 
+
+         .chicken-btn {
+        height: auto;
+        position: absolute;
+        left: 10px;
+       } 
+}
+
+.satay {
+  background: url("../img/chicken-satay-bg-black.png");
+  padding: 10rem 10rem;
+  text-align: center;
+  height: 800px;
+}
+
+.satay-wrapper {
+    display: flex;
+    align-items: center;
+    height: 800px;
+}
+
+.satay-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .satay-info {       
+        padding: 2rem;
+        margin-bottom: 300px;
+    }
+}
+.satay-img img{
+    height: auto;
+    padding-left: 100px;
+    padding-bottom: 300px;
+    max-width: 600px;
+}
+
+.satay h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #f9f8f8;
+}
+
+.satay p {
+  font-size: 1.125rem;
+  color: #e6e4e4;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.satay-btn {
+    display: inline-flex;
+    height: 65px;
+    max-width: 320px;
+    margin: 0 5rem;
+    width: 100%;
+    font-size: 20px;
+    background-color: var(--yellow);
+    color: var(--black);
+    justify-content: space-around;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 20px;
+    margin-top: 60px;
+    font-weight: bolder;
+}
+
+.chef {
+    background: url("../img/chef-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 800px;
+}
+.chef-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+    text-align: center;
+}
+
+
+img {
+        max-width: 248px;
+        width: 100%;
+    }
+
+.chef-info {
+    p {
+        padding-top: 30px;
+        font-size: clamp(1rem, 10vw, 1.5rem);
+    }
+    h3 {
+        font-size: clamp(2rem, 10vw, 2rem);
+        padding: 2rem;
+        padding-top: 100px;
+    }
+}
